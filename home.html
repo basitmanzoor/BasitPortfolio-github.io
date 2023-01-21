@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#first"> Home</a></li>
+                <li><a href="#about"> About Me</a></li>
+                <li><a href="#skills"> My Skills</a></li>
+                <li><a href="#video"> My Videos</a></li>
+                <li><a href="#contact"> Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!--Home Page Section Start-->
+        <div class="first" id="first">
+            <div class="second">
+                <h1>I am Basit <span>Manzoor</span></h1>
+                <p>Welcome to my official portfolio website
+                    <br>to know about me
+                </p>
+                <br>
+                <br>
+                <div class="social">
+                    <a href="https://www.instagram.com/basit.sr4/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/basitmanzoorcj/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/CjBasit" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="ResumeBasit2022.pdf" class="CV" target="_blank"> Download CV</a>
+            </div>
+            <div class="images">
+                <img src="Images/shape.png" class="shape">
+                <img src="Images/boy.png" class="photo">
+            </div>
+        </div>
+        <!--About Section Start-->
+        <section class="third" id="about">
+            <div class="about">
+                <img src="Images/dp.png" class="dp">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5>Developer <span> & Designer </span></h5>
+                    <p>My name is Basit Manzoor and I currently live in Srinagar, Kashmir. I have completed my
+                        graduation from Lovely Professional University in Computer Science Engineering. I have always
+                        been passionate about web development and that's the reason I have developed my portfolio
+                        website. I consider myself a leader who leads with an example, has a strong personality, and
+                        respects everyone's opinion. I am a person who believes in quality and is determined to give his
+                        best in every field. </p>
+                </div>
+            </div>
+        </section>
+        <!--Skills Section Start-->
+        <section class="skills" id="skills">
+            <div class="fourth">
+                <h2>My skills </h2>
+            </div>
+
+            <div class="box">
+                <div class="web">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h5>Web Developer</h5>
+                    <div class="para">
+                        <p>From designing to developing a beautiful website with the help of HTML, CSS and JavaScript.
+                            Keeping client requirements in mind, I can design and develop a quality website.</p>
+                        <p style="text-align: center;"></p>
+                        <a class="button" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="web">
+                    <i class="fa-solid fa-images"></i>
+                    <h5>UI/UX Designer</h5>
+                    <div class="para">
+                        <p>Gathering and Evaluating user requirements to deliver the exact product. I am able to design
+                            graphical user interface elements with the help of Photoshop, Figma and Adobe XD.</p>
+                        <p style="text-align: center;"></p>
+                        <a class="button" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="web">
+                    <i class="fa-solid fa-marker"></i>
+                    <h5>Content Writer</h5>
+                    <div class="para">
+                        <p>I can write informative and engaging content for a website while keeping SEO in mind. I have
+                            the ability to write a unique content on desired topics to make it more user friendly and
+                            professional.</p>
+                        <p style="text-align: center;"></p>
+                        <a class="button" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Experience section-->
+        <section class="Experience" id="video">
+            <div class="Exp">
+                <h2>My Videos</h2>
+            </div>
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><iframe width="892" height="502"
+                        src="https://www.youtube.com/embed/UqwW1DN1K6s" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen controls></iframe></div>
+                <div class="carousel-cell"><iframe width="892" height="502"
+                        src="https://www.youtube.com/embed/subOosvnHZA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen controls></iframe></div>
+                <div class="carousel-cell"><iframe width="892" height="502"
+                        src="https://www.youtube.com/embed/_83u0DWCb6o" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen controls></iframe></div>
+            </div>
+        </section>
+        <!--Contact us section-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Get in touch</div>
+                        <p>Hey! You can reach out to me with the help of following details. I would appretiate it.</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head2">Name</div>
+                                    <div class="subtitle">Basit Manzoor</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head2">Address</div>
+                                <div class="subtitle">Srinagar, Kashmir</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head2">Email</div>
+                                <div class="subtitle">Basit1107@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column right">
+                        <div class="text">Message Me</div>
+                        <form action="#">
+                            <div class="fields">
+                                <div class="field name">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                                <div class="field email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="email" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="50" rows="05" placeholder="Describe project" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer>
+        <a href="#contact"> Contact Me </a>
+        <a href="terms.html" target="_blank"> Terms of Use </a>
+        <a href="privacy.html" target="_blank"> Privacy Policy </a>
+        <a>&copy Copyright 2022 | <span>Created by Basit Manzoor</span></a>
+    </footer>
+
+    <!-- Flickity JS files -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+</html>
