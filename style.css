@@ -17,15 +17,54 @@ html {
     background-color: #faca5b;
 }
 
-/* Hide the navigation menu by default */
-nav ul {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1em;
+  }
+  
+  /* Hide the navigation menu by default */
+  nav ul {
     display: none;
   }
   
   /* Show the navigation menu when the hamburger icon is clicked */
-  .menu-toggle:checked + nav ul {
-    display: block;
+  #nav-toggle:checked + nav ul {
+    display: flex;
   }
+  
+  /* Style the hamburger icon */
+  .nav-toggle {
+    /* Add styles for the hamburger icon here */
+    display: none;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+      /* Add styles for the hamburger icon here */
+    }
+  }
+  
   
 .first {
     position: relative;
