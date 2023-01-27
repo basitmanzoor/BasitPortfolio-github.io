@@ -17,7 +17,16 @@ html {
     background-color: #faca5b;
 }
 
-
+/* Hide the navigation menu by default */
+nav ul {
+    display: none;
+  }
+  
+  /* Show the navigation menu when the hamburger icon is clicked */
+  .menu-toggle:checked + nav ul {
+    display: block;
+  }
+  
 .first {
     position: relative;
     width: 100%;
