@@ -17,22 +17,16 @@ html {
     background-color: #faca5b;
 }
 
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
   
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
   
-  nav li {
+  /* nav li {
     margin: 0 1em;
-  }
+  } */
   
   /* Hide the navigation menu by default */
   nav ul {
@@ -59,9 +53,47 @@ nav {
       flex-direction: column;
     }
     .nav-toggle {
+        position: absolute;
+        top: 0.5em;
+        right: 1em;
+        width: 2em;
+        height: 2em;
+        border: none;
+        background: transparent;
+      }
+      .nav-toggle:before {
+        content: "";
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        width: 100%;
+        height: 0.2em;
+        background: white;
+      }
+      
+      .nav-toggle:after {
+        content: "";
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+        width: 100%;
+        height: 0.2em;
+        background: white;
+      }
+  }
+
+  #hamburger-button {
+    display: none; /* hide the button by default */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* show the button when the screen is smaller than 600px */
+    #hamburger-button {
       display: block;
-      cursor: pointer;
-      /* Add styles for the hamburger icon here */
+    }
+    /* hide the navigation menu by default */
+    #nav-menu {
+      display: none;
     }
   }
   
